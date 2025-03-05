@@ -1,64 +1,115 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+/* Dark Theme Background */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-header nav ul {
+/* Navigation Bar */
+nav {
+    background: #1f1f1f;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: #00bcd4;
     text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-/* Section Styles */
-section {
-    padding: 2em;
-    margin: 1em auto;
-    width: 80%;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav ul li a:hover {
+    color: #ff9800;
 }
 
-/* Image Styles */
-.profile-img {
-    display: block;
-    max-width: 50px;
-    height: auto;
-    margin: 0 auto 1em;
-    border-radius: 50%;
-    border: 3px solid #333;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Footer Styles */
-footer {
+/* Header */
+header {
     text-align: center;
-    padding: 1em 0;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.about img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Projects Section */
+.projects {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.projects h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
     background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+.project-card h3 {
+    color: #00bcd4;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact a:hover {
+    color: #ff9800;
 }
