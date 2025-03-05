@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,30 +6,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Dark Theme Background */
+/* Body Background */
 body {
     background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
-    padding: 20px;
+    text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
     background: #1f1f1f;
     padding: 15px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -43,48 +40,74 @@ nav ul li a:hover {
     color: #ff9800;
 }
 
-/* Header */
-header {
+/* Hero Section */
+.hero {
+    background: url('assets/code-background.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 50px 0;
 }
 
-header h1 {
-    font-size: 36px;
-    font-weight: bold;
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff9800;
+    transform: scale(1.1);
 }
 
 /* About Section */
 .about {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    max-width: 900px;
-    margin: 50px auto;
+    padding: 50px;
 }
 
 .about img {
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Projects Section */
+/* Projects */
 .projects {
-    max-width: 900px;
-    margin: 50px auto;
+    padding: 50px;
 }
 
-.projects h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project-card {
     background: #1e1e1e;
     padding: 15px;
-    margin: 15px 0;
+    width: 300px;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -94,14 +117,9 @@ header h1 {
     background: #333;
 }
 
-.project-card h3 {
-    color: #00bcd4;
-}
-
-/* Contact Section */
+/* Contact */
 .contact {
-    text-align: center;
-    margin: 50px auto;
+    padding: 50px;
 }
 
 .contact a {
@@ -113,3 +131,11 @@ header h1 {
 .contact a:hover {
     color: #ff9800;
 }
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    padding: 20px;
+    margin-top: 20px;
+}
+
