@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Nick Russert | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
+
+    <!-- Navigation -->
     <header>
         <nav>
             <ul>
@@ -18,75 +21,58 @@
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Nick Russert</h1>
+            <p>Computer Science Student | AI & Machine Learning Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-                <img src="assets/Nick-7-Web.jpg" alt="Profile Picture" width="150" height="auto" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-        <p>
-            Hello! I'm a passionate computer science student with a love for tackling challenging problems, especially those that can be solved with artificial intelligence and machine learning. I am currently in my fourth year at San Diego State University, set to graduate in the spring of 2025.
-        </p>
-        <p>
-            From a young age, I've been fascinated by the intersection of technology and problem-solving. This curiosity led me to pursue a degree in computer science, where I've had the opportunity to explore various programming languages, algorithms, and technologies.
-        </p>
-        <p>
-            Throughout my academic journey, I've delved into the intricacies of AI and machine learning, finding joy in understanding how these technologies can be applied to real-world problems. Whether it's developing predictive models, optimizing algorithms, or exploring new data structures, I'm always eager to expand my knowledge and skills in this rapidly evolving field. My most recent project involved using computer vision to classify ASL finger spellings into their correct classes.
-        </p>
-        <p>
-            Beyond academics, I'm an avid learner and enjoy staying updated on the latest advancements in technology. I actively seek out opportunities to engage with the tech community, whether through attending workshops or participating in hackathons.
-        </p>
-        <p>
-            In addition to my technical skills, I also value collaboration and teamwork. I currently work part-time as a server at Din Tai Fung, which is world-renowned for its food and impeccable service. Working part-time while attending university has taught me how to manage my time effectively to stay on top of my schoolwork while upholding my commitment to my work schedule.
-        </p>
-        <p>
-            Outside of the classroom, you can often find me experimenting with smart home devices, cooking new recipes in the kitchen, or taking care of my numerous houseplants. I believe in maintaining a healthy work-life balance, as I believe it contributes to overall productivity and well-being.
-        </p>
-        <p>
-            I'm excited about the opportunity to leverage my skills and passion for technology to make a meaningful impact in the world. Whether it's through developing innovative solutions, contributing to groundbreaking research, or inspiring the next generation of technologists, I'm dedicated to making a positive difference in whatever I do.
-        </p>
-        <p>
-            Thank you for taking the time to learn a bit about me. I look forward to connecting and exploring potential opportunities together.
-        </p>
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <img src="assets/Nick-7-Web.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate computer science student with a love for AI and machine learning...</p>
+            <p>Currently in my fourth year at SDSU, I have explored various programming languages, algorithms, and technologies.</p>
+            <p>My latest project focused on using computer vision to classify ASL fingerspelling with high accuracy.</p>
+        </div>
     </section>
-    <section id="projects">
-    <h2>Projects</h2>
 
-    <article>
-        <h3>ASL Handsign Machine Learning Model</h3>
-        <p>
-            This project aims to identify American Sign Language (ASL) fingerspelling images using two machine learning models: a Convolutional Neural Network (CNN) and a Support Vector Machine (SVM). The project explores the strengths and weaknesses of both models in classifying hand signs into the 26 letters of the alphabet with high accuracy.
-        </p>
-        <p>
-            The CNN model was able to achieve 99.5% accuracy by automatically learning features from raw image data, while the SVM model, using Histogram of Gradients (HOG) feature extraction, achieved 100% accuracy. The dataset consisted of 87,000 ASL fingerspelling images, and various techniques like dimensionality reduction were employed to optimize performance.
-        </p>
-        <p>
-            This project demonstrates the potential of machine learning models in solving complex computer vision problems, with practical applications in the field of accessibility for deaf and hard-of-hearing individuals.
-        </p>
-        <a href="https://github.com/NickRussert/CNN-SVM-ASL" target="_blank">View Project on GitHub</a>
-        <a href="/mnt/data/Paper (1).pdf" target="_blank">Read Full Paper</a>
-    </article>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>ASL Handsign ML Model</h3>
+                <p>Used CNN & SVM to classify ASL fingerspelling with 99.5%-100% accuracy.</p>
+                <a href="https://github.com/NickRussert/CNN-SVM-ASL" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
 
-</section>
-    <section id="resume">
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
         <h2>Resume</h2>
-        <p>
-		You can view my resume <a href="assets/resume.pdf" target="_blank">here</a>.
-	</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: russertnick@gmail.com </p>
-        <p>Phone: 858-717-2732 </p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nick-russert-08372426a/" target="_blank">https://www.linkedin.com/in/nick-russert-08372426a/</a></p>
+        <p>View my resume <a href="assets/resume.pdf" target="_blank" class="btn">here</a>.</p>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:russertnick@gmail.com">russertnick@gmail.com</a></p>
+        <p>Phone: 858-717-2732</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nick-russert-08372426a/" target="_blank">LinkedIn Profile</a></p>
+    </section>
 
-<footer>
-        &copy; 2024 Nick Russert
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nick Russert</p>
+    </footer>
 
-    <script src="js/scripts.js"></script>
 </body>
 </html>
+
